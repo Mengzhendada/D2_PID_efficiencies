@@ -38,7 +38,7 @@
 \date{}
 \author{Shuo Jia}
 %\institute{UFPR - Disciplina - Semestre}
-%\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{footline}[frame number]
 
 \begin{document}
 \maketitle
@@ -477,15 +477,17 @@ kaon con = $\frac{kaonfit[new rfcut]}{allfit[new rfcut]}$
 \begin{column}[T]{0.5\textwidth}
 \includegraphics[width = \textwidth]{graphs/normal-distribution-curve.jpg}
 \\pion efficiency = $\frac{pionfit[rfcut]}{pionfit[all range]}$
+
 \end{column}
 \begin{column}[T]{0.5\textwidth}
 \includegraphics[width = 0.7\textwidth]{results/pid/rftime/rftime_pos_150_pi.pdf}
 \\Kaon con. = $\frac{kaonfit[rfcut]}{pionfit[rfcut]}$
 \end{column}
 \end{columns}
+\\error = $\sqrt{\frac{p(1-p)}{N}}$
 \\
     \\For different rf timing cut,
-    \\percentage: (Kpeak - Pipeak)*percentage + 1
+    \\percentage: 1+(Kpeak - Pipeak)*percentage
   \\eg. pion peak at 1, kaon peak at 1.6, then percentage 80 means (1.6-1)*80\%+1 = 1.48, rf right hand side cut is at 1.48
 \end{frame}
 
@@ -600,6 +602,7 @@ sixth delta cut \\
 \end{columns}
 \end{frame}
 \begin{frame}{150,SHMS momentum 3.936}
+No HGC cut, aero greater than 4
 \begin{columns}
 \begin{column}[T]{0.3\textwidth}
 first delta cut \\
@@ -659,7 +662,17 @@ sixth delta cut \\
 \end{column}
 \end{columns}
 \end{frame}
-
+\begin{frame}{How to use it}
+\begin{itemize}
+    \item less than 2.9, use pion eff, pion purity is 1
+    \item 2.9 to 3.9, use percentage where pi eff converge, 99\%
+    \item greater than 3.9, use pion eff, pion purity only for pos, pion purity = 1 for neg 
+\end{itemize}
+    \\
+    How to apply the eff and purity?
+    \\
+    I'm thinking of add two branches on my data, so for an event with different delta, it will have an pi eff and pi purity. That branches can be used as weighting
+\end{frame}
 \begin{frame}
   backup
 \end{frame}
