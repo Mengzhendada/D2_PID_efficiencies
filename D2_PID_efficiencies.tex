@@ -632,6 +632,68 @@ sixth delta cut \\
 \end{column}
 \end{columns}
 \end{frame}
+\begin{frame}{150, SHMS momentum 3.936}
+HGC less than 2, no aero cut\\
+\begin{columns}
+\begin{column}[T]{0.33\textwidth}
+first delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_0.pdf}
+\end{column}
+\begin{column}[T]{0.33\textwidth}
+second delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_1.pdf}
+\end{column}
+\begin{column}[T]{0.33\textwidth}
+delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_2.pdf}
+\end{column}
+\end{columns}
+\begin{columns}
+\begin{column}[T]{0.33\textwidth}
+forth delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_3.pdf}
+\end{column}
+\begin{column}[T]{0.33\textwidth}
+fifth delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_4.pdf}
+\end{column}
+\begin{column}[T]{0.33\textwidth}
+sixth delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_5.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}{150,SHMS momentum 3.936}
+No HGC cut, aero greater than 4
+\begin{columns}
+\begin{column}[T]{0.3\textwidth}
+first delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_0_pi.pdf}
+\end{column}
+\begin{column}[T]{0.3\textwidth}
+second delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_1_pi.pdf}
+\end{column}
+\begin{column}[T]{0.3\textwidth}
+third delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_2_pi.pdf}
+\end{column}
+\end{columns}
+\begin{columns}
+\begin{column}[T]{0.3\textwidth}
+forth delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_3_pi.pdf}
+\end{column}
+\begin{column}[T]{0.3\textwidth}
+fifth delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_4_pi.pdf}
+\end{column}
+\begin{column}[T]{0.3\textwidth}
+sixth delta cut \\
+\includegraphics[width = 0.9\textwidth]{results/pid/rftime/rftime_neg_150_5_pi.pdf}
+\end{column}
+\end{columns}
+\end{frame}
 \begin{frame}{150,SHMS momentum 3.936}
 \begin{columns}
 \begin{column}[T]{0.3\textwidth}
@@ -666,12 +728,36 @@ sixth delta cut \\
 \begin{itemize}
     \item less than 2.9, use pion eff, pion purity is 1
     \item 2.9 to 3.9, use percentage where pi eff converge, 99\%
-    \item greater than 3.9, use pion eff, pion purity only for pos, pion purity = 1 for neg 
+%    \item greater than 3.9, use pion eff, pion purity only for pos, pion purity = 1 for neg 
 \end{itemize}
     \\
     How to apply the eff and purity?
     \\
     I'm thinking of add two branches on my data, so for an event with different delta, it will have an pi eff and pi purity. That branches can be used as weighting
+\end{frame}
+\begin{frame}
+  \begin{columns}
+    \begin{column}[T]{0.5\textwidth}
+      pos. pi eff.
+      \includegraphics[width = 0.9\textwidth]{results/pid/SHMS_pi_eff_6194.pdf}
+\end{column}
+\begin{column}[T]{0.5\textwidth}
+  neg. pi eff.
+  \includegraphics[width = 0.9\textwidth]{results/pid/SHMS_pi_eff_6245.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}
+  \begin{columns}
+    \begin{column}[T]{0.5\textwidth}
+      pos. pi purity.
+      \includegraphics[width = 0.9\textwidth]{results/pid/SHMS_pi_purity_6194.pdf}
+\end{column}
+\begin{column}[T]{0.5\textwidth}
+  neg. pi purity.
+  \includegraphics[width = 0.9\textwidth]{results/pid/SHMS_pi_purity_6245.pdf}
+\end{column}
+\end{columns}
 \end{frame}
 \begin{frame}
   backup
